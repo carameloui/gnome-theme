@@ -1,7 +1,7 @@
 /* SMOOTH43 */
 
 /* colors */
-/* accent_bg: #1A73E8 */
+/* accent_bg: #0a9396 */
 /* hover_bg: #4f5761 */
 /* accent_fg: #ffffff */
 /* slider_red: #bb6271 */
@@ -19,10 +19,10 @@
 .panel-button,
 .clock,
 .clock-display StIcon{
-color: #ffffff;
-  border-radius: 14px;
-  border: 3px solid transparent;
-  background-color: #2b2828;
+  color: #fff;
+  border-radius: 12px;
+  border: 1px solid transparent;
+  background-color: #443711;
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.03);
 }
 .clock-display StIcon{
@@ -31,14 +31,14 @@ color: #ffffff;
 }
 .panel-button:hover,
 .panel-button:hover .clock{
-color: #2b2b2b;
-  background-color: rgba(255, 255, 255, 0.5);
+  color: #171206;
+  background-color: #e9d8a6;
 }
 .panel-button:active,
 .panel-button:overview, /* activites */
 .panel-button:active .clock{
-  background-color: rgba(255, 255, 255, 0.5);
-  color: #2b2b2b;
+  background-color: #e9d8a6;
+  color: #171206;
 }
 /* clock fix */
 .clock-display{
@@ -50,33 +50,34 @@ color: #2b2b2b;
   margin: 0 !important;
 }
 
-/* POPOVERS */
 .popup-menu-content{
-  padding: 16px;
-  border-radius: 24px;
+  padding: 0;
+  margin: 0;
+  background-color: #171206 !important;
+  border-radius: 8px;
   border: 1px solid rgba(255, 255, 255, 0.03);
 }
 .popup-menu-item{
-
+  margin: 0;
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.03);
 }
 
 .popup-menu-item:hover{
-  background-color: #424242;
+  background-color: #fff;
   color: #ffffff;
 }
 
 .popup-menu-item:active{
-  background-color: #1A73E8;
+  background-color: #0a9396;
   color: #ffffff;
 }
 .popup-sub-menu{
-background-color: #2b2b2b;
+  background-color: #0a9396;
   color: #ffffff;
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.03);
 }
 .popup-sub-menu .popup-menu-item{
-background-color: #2b2b2b;
+  background-color: #0a9396;
   color: #ffffff;
   box-shadow: none;
 }
@@ -86,56 +87,72 @@ background-color: #2b2b2b;
 .datemenu-calendar-column{ margin: 0px; }
 .pager-button:hover,
 .pager-button:focus{
-  background-color: #595959;
+  background-color: #443711;
   border-radius: 10px;
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.03);
 }
+.calendar-change-month-back, .calendar-change-month-forward  {
+  color: #171206;
+  fill: #171206;
+}
+.calendar-week-number {
+  background-color: #443711;
+  color: #e9d8a6;
+}
 /* calendar-days */
 .calendar-day-base{ 
-color: #ffffff;
-border-radius: 10px; }
-.calendar-month-label{
-  color: #ffffff;
+  color: #171206;
+  border-radius: 8px; }
+.calendar-month-label, .day-label, .calendar-day-heading{
+  color: #171206;
   }
 .calendar-day-base:hover,
 .calendar-day-base:focus,
 .calendar-day-base:active:hover,
 .calendar-day-base:selected:hover{
+  color: #ffffff;
   background-color: #272727;
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.03);
 }
 .calendar-day-base:active,
 .calendar-day-base:selected{
   
-  background-color: #1A73E8;
-  color: black;
+  background-color: #0a9396;
+  color: #ffffff;
 }
 .calendar-today,
 .calendar-today:selected{
-  box-shadow: inset 0 0 0 2px #1A73E8;
-  background-color: #1A73E8;
+  box-shadow: inset 0 0 0 2px #0a9396;
+  background-color: #0a9396;
   
 }
 .calendar-day-with-events{ font-weight: 800; }
+.calendar-nonwork-day {
+  color: #725c1c; 
+}
 /* events */
 .calendar{
   border-radius: 11px;
-  background-color: #3f3f3f;
+  background-color: #e9d8a6;
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.03) !important;
 }
 .events-button,
 .world-clocks-button,
 .weather-button{
-background-color: #3f3f3f;
-color: #ffffff;
+  background-color: #e9d8a6;
+  color: #272727;
   border-radius: 11px;
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.03);
 }
 .events-button:active,
 .world-clock-button:active,
 .weather-button:active{
-  background-color: #1A73E8;
+  background-color: #0a9396;
   color: #ffffff;
+}
+
+.events-title {
+  color: #171206;
 }
 
 /* message-list */
@@ -151,7 +168,7 @@ color: #ffffff;
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.03);
 }
 .message-close-button:active{
-  background-color: #1A73E8;
+  background-color: #0a9396;
   color: #ffffff;
 }
 
@@ -159,7 +176,7 @@ color: #ffffff;
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.03);
 }
 .message-media-control:active{
-  background-color: #1A73E8;
+  background-color: #0a9396;
   color: #ffffff;
 }
 
@@ -170,35 +187,38 @@ color: #ffffff;
 }
 .toggle-switch:checked{
   background-image: url("./toggle10-off.svg");
-  background-color: #1A73E8;
+  background-color: #0a9396;
+  border-radius: 10px;
 }
 .dnd-button:hover{
-  background-color: #595959 !important;
-  border: 1px solid transparent !important;
+  background-color: #e9d8a6 !important;
+  /* border: 1px solid transparent !important; */
 }
 .dnd-button{
   width: 48px;
   border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.03);
-  background-color: #474747;
+  background-color: #443711;
+  color: #FFF;
   /* box-shadow: 0 2px 5px -4px black !important; */
   box-shadow: none !important;
 }
 
 .button{
-color: #C3C7D1;
-  background-color: #282828;
+  color: #e9d8a6;
+  background-color: #171206;
+  border-color: #725c1c;
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.03); 
 }
 .button:insensitive{
   box-shadow: none;
 }
 .button:inactive{
- 
+  background-color: #443711;
+  color: #FFF;
 }
 .button:active{
-  background-color: #3f3f3f;
-  color: #C3C7D1;
+  background-color: #443711;
+  color: #FFF;
 }
 .message-list-clear-button{ border-radius: 10px; }
 
@@ -218,7 +238,7 @@ border-radius: 12px; }
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.03);
 }
 .quick-slider .icon-button:active{
-  background-color: #1A73E8;
+  background-color: #0a9396;
   color: #ffffff;
 }
 .quick-toggle-menu{
@@ -234,13 +254,13 @@ color: #ffffff;
   
 }
 .notification-button{
-background-color: #1A73E8;
+background-color: #0a9396;
   border-radius: 10px !important;
   margin: 6px !important;
  
 }
 .notification-button:active{
-  background-color: #1A73E8;
+  background-color: #0a9396;
   color: #ffffff;
 }
 
@@ -250,7 +270,7 @@ background-color: #1A73E8;
   -barlevel-height: 16px;
   -barlevel-background-color: #595959;
   /* fill */
-  -barlevel-active-background-color: #1A73E8;
+  -barlevel-active-background-color: #0a9396;
   /* overfill */
   -barlevel-overdrive-color: #ffffff;
   -barlevel-overdrive-separator-width: 2px;
@@ -267,7 +287,7 @@ background-color: #1A73E8;
   background-size: cover;
 }
 .workspace-thumbnail-indicator {
-  border-color: #1A73E8;
+  border-color: #0a9396;
   border-width: 3px;
   border-radius: 12px;
 }
@@ -281,7 +301,7 @@ background-color: #1A73E8;
 }
 .app-well-app.app-folder:active .overview-icon,
 .app-well-app:active .overview-icon{
-  background-color: #1A73E8;
+  background-color: #0a9396;
   color: #ffffff;
 }
 
@@ -308,7 +328,7 @@ background-color: #1A73E8;
 .show-apps:checked .overview-icon,
 #dash .app-well-app:active .overview-icon{
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.03);
-  background-color: #1A73E8;
+  background-color: #0a9396;
   color: #ffffff;
 }
 
@@ -321,7 +341,7 @@ background-color: #1A73E8;
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.03);
 }
 .edit-folder-button:active{
-  background-color: #1A73E8;
+  background-color: #0a9396;
   color: #ffffff;
 }
 
@@ -331,8 +351,8 @@ StEntry{
   border: 1px solid rgba(255, 255, 255, 0.03);
 }
 StEntry:hover, StEntry:focus, StEntry:active{
-  border: 1px solid #1A73E8;
-  box-shadow: inset 0 0 0 1px #1A73E8;
+  border: 1px solid #0a9396;
+  box-shadow: inset 0 0 0 1px #0a9396;
 }
 
 .search-section-content{
@@ -346,7 +366,7 @@ StEntry:hover, StEntry:focus, StEntry:active{
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.03);
 }
 .list-search-result:active, .search-provider-icon:active{
-  background-color: #1A73E8;
+  background-color: #0a9396;
   color: #ffffff;
 }
 
@@ -383,11 +403,11 @@ StEntry:hover, StEntry:focus, StEntry:active{
   
 }
 .modal-dialog-linked-button:focus{
-  box-shadow: inset 0 0 0 2px #1A73E8;
-  background-color: #1A73E8;
+  box-shadow: inset 0 0 0 2px #0a9396;
+  background-color: #0a9396;
 }
 .modal-dialog-linked-button:active{
-  background-color: #1A73E8;
+  background-color: #0a9396;
   color: #ffffff;
 }
 .nm-dialog-scroll-view{
