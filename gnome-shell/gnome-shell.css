@@ -36,6 +36,7 @@
 
 .app-folder-dialog {
   background-color: #443711 !important;
+  border-radius: 12px;
 }
 
 .edit-folder-button {
@@ -181,7 +182,7 @@
 .world-clocks-button,
 .weather-button{
   background-color: #e9d8a6;
-  color: #272727;
+  color: #171206 !important;
   border-radius: 11px;
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.03);
 }
@@ -189,11 +190,19 @@
 .world-clock-button:active,
 .weather-button:active{
   background-color: #0a9396;
-  color: #ffffff;
+  color: #171206 !important;
 }
 
 .events-title {
-  color: #171206;
+  color: #171206 !important;
+}
+
+.events-list {
+  color: #443711 !important;
+}
+
+.event-time {
+  color: #725c1c !important;
 }
 
 /* message-list */
@@ -252,52 +261,77 @@
 .dnd-button{
   width: 48px;
   border-radius: 10px;
-  background-color: #443711;
+  background-color: #443711 !important;
   color: #FFF;
   /* box-shadow: 0 2px 5px -4px black !important; */
   box-shadow: none !important;
 }
 
 .button{
-  color: #e9d8a6;
-  background-color: #171206;
+  color: #fff !important;
+  background-color: #171206 !important;
   border-color: #725c1c;
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.03); 
+}
+.button:hover {
+  background-color: #443711 !important;
 }
 .button:insensitive{
   box-shadow: none;
 }
 .button:inactive{
-  background-color: #443711;
+  background-color: #443711 !important;
   color: #FFF;
 }
-.button:active{
-  background-color: #443711;
+.button:active, .button:checked{
+  background-color: #443711 !important;
   color: #FFF;
 }
 .message-list-clear-button{ border-radius: 10px; }
 
 /* quick-settings */
-.icon-button{ box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.03); }
+.icon-button{ 
+  background-color: #171206 !important;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.03);
+ }
+ .icon-button:hover{ 
+  background-color: #443711 !important;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.03);
+ }
 .quick-settings{
   padding: 20px;
   border-radius: 24px;
 }
 .quick-toggle{ 
-color: #ffffff;
-border-radius: 12px; }
-.quick-toggle-arrow { border-radius: 0 12px 12px 0; }
+  color: #ffffff;
+  border-radius: 8px; 
+}
+.quick-toggle:first-child{ 
+  border-radius: 8px 0 0 8px; 
+}
+.quick-toggle-arrow { 
+  background-color: #171206 !important;
+  border-radius: 0 8px 8px 0; 
+  border-width: 0;
+}
+
 .quick-slider .icon-button{ box-shadow: none; }
 .quick-slider .icon-button:hover{ 
-  background-color: #474747;
+  /* background-color: #474747; */
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.03);
 }
-.quick-slider .icon-button:active{
-  background-color: #0a9396;
+.quick-slider .icon-button:active, .button:active{
+  background-color: #0a9396 !important;
   color: #ffffff;
 }
-.quick-toggle-menu{
+.quick-toggle-menu {
+  background-color: #171206 !important;
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.03);
+}
+
+.quick-toggle-menu .icon{
+  background-color: #443711 !important;
+  border-width: 0;
 }
 
 
@@ -323,7 +357,7 @@ border-radius: 12px; }
 .level {
   height: 16px;
   -barlevel-height: 16px;
-  -barlevel-background-color: #595959;
+  -barlevel-background-color: #443711;
   /* fill */
   -barlevel-active-background-color: #0a9396;
   /* overfill */
@@ -408,13 +442,14 @@ StEntry {
   border-radius: 12px;
   background-color: #171206 !important;
   border: 1px solid rgba(255, 255, 255, 0.03);
-  color: #ffffff;
+  color: #ffffff !important;
 }
 .switcher-list,
 .resize-popup,
 .workspace-switcher,
 .osd-window{
   background-color: #171206 !important;
+  color: #ffffff !important;
   border-radius: 12px;
   box-shadow: 0 8px 8px 0 rgba(0,0,0,0.1);
   border: 1px solid rgba(255, 255, 255, 0.03);
@@ -428,16 +463,16 @@ StEntry {
 .switcher-list .item-box:selected{
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.03);
 }
+
 .modal-dialog-linked-button {
   padding: 10px 0 !important;
   margin: 12px !important;
   border-radius: 10px !important;
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.03);
-  background-color: #424242;
-  
+  border: none !important;
 }
 .modal-dialog-linked-button:focus{
-  box-shadow: inset 0 0 0 2px #0a9396;
+  box-shadow: inset 0 0 0 2px #0a9396 !important;
   background-color: #0a9396;
 }
 .modal-dialog-linked-button:active{
@@ -451,75 +486,36 @@ StEntry {
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.03);
 }
 
-/*  */
-.level-bar{ background-color: #595959; }
-/*  ------------------------------------------------------------ */
+/* Screenshot */
 
-.popup-menu-content {
- color: #ffffff;
-  background: #17181a;
- }
-  
-  .system-menu-action {
-  color: #C3C7D1;
-  border-radius: 32px;
-  /* wish we could do 50% */
-  border: 1px solid #1b1c24;
-  background: #21232d;
-  padding: 13px; }
-  
-  .window-close {
-  background-color: #21232d;
-  color: #cfd2da;
-  border-radius: 21px;
-  border: 2px solid #1b1c24;
-  padding: 3px;
-  height: 28px;
-  width: 28px;
-  box-shadow: -1px 1px 5px 0px rgba(0, 0, 0, 0.5);
-  transition-duration: 300ms; }
-  
-  .window-caption {
-  spacing: 20px;
-  color: #f8f8f2;
-  background-color: #21232d;
-  border: 1px solid #1b1c24;
-  padding: 4px 8px; }
-  
-  .dash-background {
-  background-color: #21232d; }
-  
-  .app-folder-dialog {
-  background-color: #21232d;
-  border: none; }
-  
-   #dashtodockContainer #dash .dash-background {
-    background: #21232d !important;
-    border: none; }
-    
-.icon-button:active{ 
-color: #ffffff;
-background-color: #282828; }
-.quick-toggle:checked{ 
-color: #ffffff;
-background-color: #282828; }
-.quick-slider .icon-button:active{
-color: #ffffff;
-background-color: #282828; }
-.icon-button{
-  background-color: #282828;
+.screenshot-ui-panel {
+  background-color: #443711 !important;
+  border-radius: 12px;
 }
-.icon-button:hover{ background-color: #424242; }
-.quick-slider .icon-button:hover{ 
-  background-color: #282828;
-  color: #ffffff;
+
+.screenshot-ui-close-button {
+  background-color: #171206 !important;
 }
-.quick-toggle-menu{ 
-  background-color: #282828;
-  color: #ffffff;
+.screenshot-ui-close-button:hover {
+  background-color: #725c1c !important;
 }
-.quick-toggle-menu .header .icon{ background-color: #424242; box-shadow: inset 0 0 0 2px black; }
-.level-bar{ background-color: #595959; }
+.screenshot-ui-type-button:checked {
+  background-color: #e9d8a6 !important;
+  color: #171206 !important;
+}
+
+.screenshot-ui-type-button:hover, .screenshot-ui-type-button:focus {
+  background-color: #171206;
+  color: #FFF;
+}
+.screenshot-ui-tooltip {
+  background-color: #443711;
+}
+/*  */
+.level-bar{ 
+  background-color: #443711 !important;
+}
+
 stage {
     font-family: Roboto Reguler;
     font-size: 14px;
