@@ -137,6 +137,13 @@
   color: #171206;
   fill: #171206;
 }
+.calendar-change-month-back:hover, 
+.calendar-change-month-forward:hover,
+.calendar-change-month-back:focus, 
+.calendar-change-month-forward:focus  {
+  color: #fff;
+  fill: #fff;
+}
 .calendar-week-number {
   background-color: #443711;
   color: #e9d8a6;
@@ -340,7 +347,9 @@
   background-color: #171206;
   color: #ffffff;
   border-radius: 12px;
-  
+}
+.notification-banner:hover{
+  color: #171206;
 }
 .notification-button{
   background-color: #0a9396;
